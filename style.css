@@ -1,0 +1,682 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #fff;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 20px 0;
+}
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: 900px;
+}
+
+nav ul li {
+    margin-right: 60px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-btn {
+    background-color: #2cb742;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.login-btn:hover {
+    background-color: #28a232;
+}
+
+/* Hero Section */
+.home-hero {
+    background: linear-gradient(rgba(40, 162, 50, 0.1), rgba(40, 162, 50, 0.1)),
+                url('12.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.home-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    max-width: 40%;
+}
+
+.hero h1 {
+    font-size: 60px;
+    color: #535353;
+}
+.hero h2 {
+    font-size: 60px;
+    color: #535353;
+}
+
+.hero h2 span {
+    color: #2cb742;
+}
+.hero h3 span {
+    font-size: 60px;
+    color: #2cb742;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.cta-btn {
+        display: inline-block;
+        background-color: #2cb742;
+        color: white;
+        padding: 10px 20px; /* Reduced padding to make the button smaller */
+        text-decoration: none;
+        margin-top: 20px;
+        border-radius: 10px;
+        width: 150px; /* Set a fixed width for the button */
+        font-size: 16px;
+        text-align: center;
+    }
+    
+
+    
+
+.cta-btn:hover {
+    background-color: #28a232;
+}
+
+.hero-image img {
+    max-width: 100%;
+}
+
+/* Main Content */
+.main {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #2cb742;
+}
+
+.card p {
+    margin-top: 10px;
+}
+
+/* Features Section */
+.features {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.plans {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.plan {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.plan h3 {
+    color: #2cb742;
+}
+
+.plan p {
+    margin-top: 10px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 20px;
+    color: #2cb742;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #2cb742;
+    color: white;
+}
+
+footer .cta-btn {
+    background-color: #fff;
+    color: #2cb742;
+}
+
+footer .cta-btn:hover {
+    background-color: #f0f0f0;
+}
+
+
+/* General Styles for Auth Pages */
+.auth-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.auth-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    max-width: 500px;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+.auth-form h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.auth-form p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.form-group input:focus {
+    border-color: #2cb742;
+    outline: none;
+}
+
+.form-group a {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    color: #2cb742;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.form-group a:hover {
+    text-decoration: underline;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #2cb742;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.cta-btn:hover {
+    background-color: #28a232;
+}
+
+/* Social Login Buttons */
+.social-login {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-login button {
+    width: 48%;
+    padding: 10px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.social-login button:hover {
+    background-color: #ccc;
+}
+
+/* Styling for Google and Apple buttons */
+.google-btn {
+    background-color: #db4437;
+    color: white;
+}
+
+.google-btn:hover {
+    background-color: #c33d30;
+}
+
+.apple-btn {
+    background-color: #333;
+    color: white;
+}
+
+.apple-btn:hover {
+    background-color: #222;
+}
+
+/* Auth Page Image Styling */
+.auth-image {
+    width: 100%;
+   
+}
+
+.auth-image img {
+    width:200;
+    border-radius: 10px;
+    margin-right: 100px;
+
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .auth-container {
+        flex-direction: column;
+        padding: 20px;
+        
+    }
+    .auth-form, .auth-image {
+        width: 100%;
+    }
+    .auth-image {
+        margin-top: 30px;
+        padding-left: 0;
+       
+    }
+}
+/* Centering the purchase section */
+.purchase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Styling the plans container */
+.plans {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px; /* Adds space between the plans */
+}
+
+/* Styling individual plan cards */
+.plan {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Adjusting the headers and text */
+.purchase h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.plan h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.plan p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Styling the read-more button */
+.read-more {
+    color: #28a745;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Updated Purchase Hero Section */
+.purchase-hero {
+    background: linear-gradient(rgba(40, 162, 50, 0.2), rgba(40, 162, 50, 0.2)),
+                url('11.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.purchase-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+}
+
+.hero-image {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.featured-image {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Benefits Section */
+.benefits {
+    padding: 50px 0;
+    background-color: #f0f9f1;
+    text-align: center;
+}
+
+.benefits-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.benefit-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(44, 183, 66, 0.1);
+    flex: 1;
+    max-width: 350px;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-card h3 {
+    color: #2cb742;
+    margin-bottom: 15px;
+}
+
+/* Updated Purchase Section */
+.purchase {
+    padding: 80px 0;
+    background-color: white;
+    text-align: center;
+}
+
+.section-description {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: #666;
+}
+
+.plans {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.plan {
+    background: white;
+    border: 1px solid #e1e1e1;
+    border-radius: 15px;
+    padding: 40px;
+    flex: 1;
+    max-width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(44, 183, 66, 0.1);
+}
+
+.plan.featured {
+    border: 2px solid #2cb742;
+    transform: scale(1.05);
+    background: linear-gradient(to bottom, #f0f9f1, white);
+}
+
+.plan-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.price {
+    font-size: 36px;
+    color: #2cb742;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.price span {
+    font-size: 16px;
+    color: #666;
+}
+
+.purchase-btn {
+    background-color: #2cb742;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.purchase-btn:hover {
+    background-color: #239a35;
+}
+
+/* Updated Community Section */
+.community {
+    background-color: #f0f9f1;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.community h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.community p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+
+/* Update the purchase section styling */
+.purchase {
+    background-color: rgba(255, 255, 255, 0.98);
+    position: relative;
+    z-index: 2;
+    padding: 80px 0;
+}
+
+.plan {
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.plan.featured {
+    background: linear-gradient(to bottom, rgba(240, 249, 241, 0.95), rgba(255, 255, 255, 0.95));
+    border: 2px solid #2cb742;
+}
+
+/* Add a subtle animation to the plans */
+.plan {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Update community section */
+.community {
+    background-color: rgba(240, 249, 241, 0.95);
+    position: relative;
+    z-index: 2;
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .benefits-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .plans {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .plan {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+    
+    .plan.featured {
+        transform: none;
+    }
+
+    .featured-image {
+        max-width: 100%;
+    }
+}

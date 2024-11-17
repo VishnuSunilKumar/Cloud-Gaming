@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Cloud Gaming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" width="220" height="30" alt="Cloud Gaming">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="purchase.html">Purchase</a></li>
+                    <li><a href="index.html#community">About</a></li>
+                </ul>
+            </nav>
+            <a href="signup.html" class="login-btn">SIGNUP</a>
+        </div>
+    </header>
+    
+    <div class="auth-container">
+        <div class="auth-form">
+            <h2>WELCOME BACK</h2>
+            <form action="login.php" method="POST">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <!-- Added name attribute for POST data -->
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <!-- Added name attribute for POST data -->
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+               
+
+                
+                
+                <button type="submit" name="submit" class="cta-btn">Login</button>
+            </form>
+
+            
+
+            <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+        </div>
+        <div class="auth-image">
+            <img src="8.jpg" alt="Background image" width="1200" height="750">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <style>
+        /* General styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Full-page container */
+        body, html {
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                        url('5.jpg') center/cover no-repeat;
+            
+        }
+
+        /* Main container split into two columns */
+        .container {
+            display: flex;
+            width: 100%;
+        }
+        /* Left section with background image */
+
+
+        /* Left section with background image */
+       
+
+        /* Right section with form */
+        .right-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10rem;
+            background-color: #ffffff;
+        }
+
+        /* Payment form container */
+        .payment-container {
+            width: 100%;
+            max-width: 400px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .plan-title {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        .progress-tracker {
+            font-size: 14px;
+            margin: 20px 0;
+            color: #888;
+        }
+
+        .progress-tracker .current-step {
+            color: #333;
+            font-weight: bold;
+        }
+
+        .payment-form .form-group {
+            margin-top: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .order-summary {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .order-summary p {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .total-amount {
+            font-weight: bold;
+            font-size: 18px;
+            color: #007bff;
+        }
+
+        .confirm-button {
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .confirm-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="right-section">
+            <div class="payment-container">
+                <div class="logo">
+                    <img src="logo.png" alt="Cloud Gaming Logo">
+                </div>
+                <h2 class="plan-title">Premium Plan 
+                    <p>
+
+                          .
+                    </p>
+                </h2>
+                
+                
+                <!-- Payment Form -->
+                <form action="premiumpayment.php" method="POST">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="accountno">Account No</label>
+                        <input type="text" id="accountno" name="accountno" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cvc">CVC</label>
+                        <input type="text" id="cvc" name="cvc" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="plan">Plan</label>
+                        <input type="text" id="plan" name="plan" required>
+                    </div>
+                    
+                    <div class="order-summary">
+                        <p>Subtotal (1 item): <span>Rs 1200</span></p>
+                        <p>Home delivery cost: <span>Rs 0.0</span></p>
+                        <p class="total-amount">Total Amount: <span>Rs 1200</span></p>
+                    </div>
+                    
+                    <button type="submit" class="confirm-button">Confirm Payment</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
