@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Success</title>
+  <style>
+    /* Background styling */
+    body {
+      background-color: #5DACF9;
+      background-image: url('32.jpg'); /* Replace with Mario background image URL */
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    /* Payment card styling */
+    .payment-card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      width: 300px;
+      text-align: center;
+    }
+
+    /* Checkmark icon */
+    .success-icon {
+      font-size: 40px;
+      color: green;
+    }
+
+    /* Text styling */
+    .success-message {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .amount {
+      font-size: 24px;
+      color: #333;
+      margin: 10px 0;
+    }
+
+    .details {
+      font-size: 14px;
+      color: #666;
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .details p {
+      display: flex;
+      justify-content: space-between;
+      margin: 5px 0;
+    }
+
+    /* Button styling */
+    .home-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      background-color: #189b29;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .home-button:hover {
+      background-color: #a5fa8b;
+    }
+  </style>
+</head>
+<body>
+  <!-- Payment success card -->
+  <div class="payment-card">
+    <div class="success-icon">✅</div>
+    <div class="success-message">Payment Success!</div>
+    <div class="amount">INR 450</div>
+
+    <div class="details">
+      <p><span>Ref Number</span> <span>000085752257</span></p>
+      <p><span>Payment Time</span> <span>25-02-2023, 13:22:16</span></p>
+      <p><span>Payment Method</span> <span>Bank Transfer</span></p>
+      <p><span>Amount</span> <span>INR 450</span></p>
+   
+    </div>
+
+    <!-- Go back to homepage button -->
+    <a href="index2.html" class="home-button">Go Back to Home Page</a> <!-- Replace with your homepage URL -->
+  </div>
+</body>
+</html>
